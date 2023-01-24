@@ -6,15 +6,16 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="shortcut icon" href="/images/favicon.png" type="image/x-icon")
         link(rel="stylesheet", href="/style.css")
-        link(rel="stylesheet" type="text/css" href="jquery.pagepiling.min.css")
-        script(src="https://code.jquery.com/jquery-3.6.1.min.js")
-        script(type="text/javascript" src="jquery.pagepiling.min.js")
+        link(rel="stylesheet" type="text/css" href="plagins/jquery.pagepiling.min.css")
         link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
-
+        script(src="https://code.jquery.com/jquery-3.6.1.min.js")
+        script(type="text/javascript" src="plagins/jquery.pagepiling.min.js")
         title task-TeamLead
     body 
         #pagepiling
+
             .section
                 +b('full-screen', {}, '')
                     +e('wrapper')
@@ -36,6 +37,7 @@ html(lang="en")
                                         +b('button', {m:'promo'}, 'button')(data-menuanchor="fivehPag")
                                             a(href="#fivePage").t-big Заказать
                     +e('video', {}, 'video')(src="video/thunder.mp4" autoplay muted loop preload="auto")
+
             .section
                     +b('constituent', {}, '')
                         +e('left')
@@ -44,19 +46,19 @@ html(lang="en")
                                     img(src="images/deresa.png", alt="deresa")
                                 +e('info')
                                     h3.t-normal Ингридиент №1
-                                    p.t-small Lorem ipsum dolor sit amet consectetur </br>adipisicing elit. Vel, maxime! Voluptas unde </br>nesciunt soluta laudantium.
+                                    p.t-small Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, maxime! Voluptas unde nesciunt soluta laudantium.
                             +e('ingredient', {m:'2'}, '')
                                 +e('element')
                                     img(src="images/ginseng.png", alt="element")
                                 +e('info')
                                     h3.t-normal Ингридиент №2
-                                    p.t-small Lorem ipsum dolor sit amet consectetur </br>adipisicing elit. Vel, maxime! Voluptas unde </br>nesciunt soluta laudantium.
+                                    p.t-small Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, maxime! Voluptas unde nesciunt soluta laudantium.
                             +e('ingredient', {m:'3'}, '')
                                 +e('element')
                                     img(src="images/morinda.png", alt="element")
                                 +e('info')
                                     h3.t-normal Ингридиент №3
-                                    p.t-small Lorem ipsum dolor sit amet consectetur </br>adipisicing elit. Vel, maxime! Voluptas unde </br>nesciunt soluta laudantium.
+                                    p.t-small Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, maxime! Voluptas unde nesciunt soluta laudantium.
                         +e('center')
                             +e('product')
                                 img(src="images/prod.png", alt="proguct")
@@ -68,19 +70,20 @@ html(lang="en")
                                     img(src="images/pngegg.png", alt="element")
                                 +e('info')
                                     h3.t-normal Ингридиент №4
-                                    p.t-small Lorem ipsum dolor sit amet consectetur </br>adipisicing elit. Vel, maxime! Voluptas unde </br>nesciunt soluta laudantium.
+                                    p.t-small Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, maxime! Voluptas unde nesciunt soluta laudantium.
                             +e('ingredient', {m:'5'}, '')
                                 +e('element')
                                     img(src="images/powder-1.png", alt="element")
                                 +e('info')
                                     h3.t-normal Ингридиент №5
-                                    p.t-small Lorem ipsum dolor sit amet consectetur </br>adipisicing elit. Vel, maxime! Voluptas unde </br>nesciunt soluta laudantium.
+                                    p.t-small Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, maxime! Voluptas unde nesciunt soluta laudantium.
                             +e('ingredient', {m:'6'}, '')
                                 +e('element')
                                     img(src="images/powder-2.png", alt="element")
                                 +e('info')
                                     h3.t-normal Ингридиент №6
-                                    p.t-small Lorem ipsum dolor sit amet consectetur </br>adipisicing elit. Vel, maxime! Voluptas unde </br>nesciunt soluta laudantium.
+                                    p.t-small Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, maxime! Voluptas unde nesciunt soluta laudantium.
+
             .section
                 +b('reviews', {}, '')
                     .container
@@ -105,8 +108,53 @@ html(lang="en")
                                         h4.t-big Алымова Диана
                                         p.t-normal Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro tempora vel </br>voluptate suscipit provident voluptatibus.
 
-            .section Some section 4
-            .section Some section 5
+            .section
+                +b('product', {}, '')
+                    .container
+                        +e('wrapper')
+                            +e('photo')
+                                img(src="images/doctor.png", alt="doctor")
+                            +e('info')
+                                h4.t-big Заголовок
+                                p.t-normal Lorem ipsum dolor sit amet consectetur adipisicing elit. </br>A harum repudiandae temporibus perferendis doloribus </br>commodi odio aperiam culpa? Laboriosam impedit in </br>corporis sit, aliquid quo?
+                                p.t-normal Lorem ipsum dolor sit amet consectetur adipisicing elit. </br>A harum repudiandae temporibus perferendis doloribus </br>commodi odio aperiam culpa? Laboriosam impedit in </br>corporis sit, aliquid quo?
+                                +b('button', {m:'product'}, 'button')(data-menuanchor="fivehPag")
+                                    a(href="#fivePage").t-big Заказать
+                        +e('property')
+                            ul.t-big
+                                li Надежность
+                                li Уверенность
+                                li Стабильность
+
+            .section
+                +b('forma', {}, '')
+                    .container
+                        +e('header')
+                            h2 LevelUp
+                            img(src="images/up.svg", alt="up")
+                        +e('timer')
+                            p.t-big Осталось времени: 
+                                span#time  30:00
+                        +e('wrapper')
+                            +e('product')
+                                img(src="/images/prod.png", alt="product")
+                                +e('price')
+                                    +e('new-price').horizontal-shake 3200
+                                        +e('olden-price') 4800
+                            +b('request', {}, 'form')
+                                h3.t-big Заявка
+                                p.t-normal Имя: </br>
+                                +e('input')
+                                    input(type="text" placeholder="Имя")
+                                    label Иван*
+                                p.t-normal Телефон: </br>
+                                +e('input')
+                                    input(type="text" name="tel" placeholder="Введите телефон" ).ss
+                                    label +7-(908)-348-87-43*
+                                +b('button', {m:'forma'}, 'button')
+                                    a(href="#").t-big Отправить
+
+
     script(type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
 
-    script(src="index.js")
+    script(src="/index.js")
