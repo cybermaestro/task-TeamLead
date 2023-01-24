@@ -329,6 +329,7 @@ h1 {
 
 .slider__info{
     padding: 45px 0 0 0;
+    max-width: 500px;
 }
 
 .slick-track {
@@ -359,6 +360,9 @@ h1 {
 
 /* start block product */
 .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: linear-gradient(62.98deg, #d3d2d2 -25.47%, #FFFFFF 81.18%);
     height: 100%;
 }
@@ -393,7 +397,7 @@ h1 {
 }
 
 @media (max-width: 640px) {
-    .product__photo img {width: 120px;height: 160px;margin: 20px auto 10px;}
+    .product__photo img {width: 120px;height: 180px;margin: 20px auto 10px;}
     .product__property ul {flex-direction: column;line-height: 18px;}
     .product {display: flex;flex-direction: column;justify-content: center;}
     .product__info p {line-height: 10px;}
