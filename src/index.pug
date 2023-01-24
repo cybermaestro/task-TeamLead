@@ -1,0 +1,112 @@
+include ../node_modules/bempug/index
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/style.css")
+        link(rel="stylesheet" type="text/css" href="jquery.pagepiling.min.css")
+        script(src="https://code.jquery.com/jquery-3.6.1.min.js")
+        script(type="text/javascript" src="jquery.pagepiling.min.js")
+        link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+
+        title task-TeamLead
+    body 
+        #pagepiling
+            .section
+                +b('full-screen', {}, '')
+                    +e('wrapper')
+                        .container
+                            +b('promo', {}, '')
+                                +e('header')
+                                    h1 LevelUp
+                                    img(src="images/up.svg", alt="up")
+                                +e('block')
+                                    +e('photo')
+                                        img(src="images/doctor.png", alt="doctor")
+                                    +e('info')
+                                        ul.t-big Lorem ipsum 
+                                            li.t-normal Lorem ipsum dolor sit amet.
+                                            li.t-normal Lorem ipsum dolor sit amet.
+                                            li.t-normal Lorem ipsum dolor sit amet.
+                                            li.t-normal Lorem ipsum dolor sit amet.
+                                            li.t-normal Lorem ipsum dolor sit amet.
+                                        +b('button', {m:'promo'}, 'button')(data-menuanchor="fivehPag")
+                                            a(href="#fivePage").t-big Заказать
+                    +e('video', {}, 'video')(src="video/thunder.mp4" autoplay muted loop preload="auto")
+            .section
+                    +b('constituent', {}, '')
+                        +e('left')
+                            +e('ingredient', {m:'1'}, '')
+                                +e('element')
+                                    img(src="images/deresa.png", alt="deresa")
+                                +e('info')
+                                    h3.t-normal Ингридиент №1
+                                    p.t-small Lorem ipsum dolor sit amet consectetur </br>adipisicing elit. Vel, maxime! Voluptas unde </br>nesciunt soluta laudantium.
+                            +e('ingredient', {m:'2'}, '')
+                                +e('element')
+                                    img(src="images/ginseng.png", alt="element")
+                                +e('info')
+                                    h3.t-normal Ингридиент №2
+                                    p.t-small Lorem ipsum dolor sit amet consectetur </br>adipisicing elit. Vel, maxime! Voluptas unde </br>nesciunt soluta laudantium.
+                            +e('ingredient', {m:'3'}, '')
+                                +e('element')
+                                    img(src="images/morinda.png", alt="element")
+                                +e('info')
+                                    h3.t-normal Ингридиент №3
+                                    p.t-small Lorem ipsum dolor sit amet consectetur </br>adipisicing elit. Vel, maxime! Voluptas unde </br>nesciunt soluta laudantium.
+                        +e('center')
+                            +e('product')
+                                img(src="images/prod.png", alt="proguct")
+                            +b('button', {m:'constituent'}, 'button')(data-menuanchor="fivehPag")
+                                a(href="#fivePage").t-big Заказать
+                        +e('right')
+                            +e('ingredient', {m:'4'}, '')
+                                +e('element')
+                                    img(src="images/pngegg.png", alt="element")
+                                +e('info')
+                                    h3.t-normal Ингридиент №4
+                                    p.t-small Lorem ipsum dolor sit amet consectetur </br>adipisicing elit. Vel, maxime! Voluptas unde </br>nesciunt soluta laudantium.
+                            +e('ingredient', {m:'5'}, '')
+                                +e('element')
+                                    img(src="images/powder-1.png", alt="element")
+                                +e('info')
+                                    h3.t-normal Ингридиент №5
+                                    p.t-small Lorem ipsum dolor sit amet consectetur </br>adipisicing elit. Vel, maxime! Voluptas unde </br>nesciunt soluta laudantium.
+                            +e('ingredient', {m:'6'}, '')
+                                +e('element')
+                                    img(src="images/powder-2.png", alt="element")
+                                +e('info')
+                                    h3.t-normal Ингридиент №6
+                                    p.t-small Lorem ipsum dolor sit amet consectetur </br>adipisicing elit. Vel, maxime! Voluptas unde </br>nesciunt soluta laudantium.
+            .section
+                +b('reviews', {}, '')
+                    .container
+                        +e('wrapper')
+                            +b('slider')
+                                +e('item')
+                                    +e('photo')
+                                        img(src="images/people-1.jpg", alt="people")
+                                    +e('info')
+                                        h4.t-big Кузнецов Михаил
+                                        p.t-normal Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro tempora vel </br>voluptate suscipit provident voluptatibus.
+                                +e('item')
+                                    +e('photo')
+                                        img(src="images/people-2.jpg", alt="people")
+                                    +e('info')
+                                        h4.t-big Стрелков Анатолий
+                                        p.t-normal Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro tempora vel </br>voluptate suscipit provident voluptatibus.
+                                +e('item')
+                                    +e('photo')
+                                        img(src="images/people-3.jpg", alt="people")
+                                    +e('info')
+                                        h4.t-big Алымова Диана
+                                        p.t-normal Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro tempora vel </br>voluptate suscipit provident voluptatibus.
+
+            .section Some section 4
+            .section Some section 5
+    script(type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+
+    script(src="index.js")

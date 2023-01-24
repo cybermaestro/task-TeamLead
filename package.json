@@ -1,0 +1,35 @@
+{
+  "name": "fat_cat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "parcel src/index.pug --port 8080 --open",
+    "build": "parcel build src/index.pug --no-cache --no-source-maps -d build --detailed-report --no-minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:cybermaestro/task-TeamLead.git"
+  },
+  "keywords": [
+    "FatCat"
+  ],
+  "author": "Dima <superman1499@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "git@github.com:cybermaestro/task-TeamLead/issues"
+  },
+  "homepage": "git@github.com:cybermaestro/task-TeamLead#readme",
+  "devDependencies": {
+    "bempug": "^1.1.1",
+    "cssnano": "^5.1.14",
+    "postcss": "^8.4.21",
+    "pug": "^3.0.2",
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "es6": "^0.0.7",
+    "normalize.css": "^8.0.1"
+  }
+}
